@@ -26,12 +26,17 @@ my %WriteMakefileArgs = (
     "Moo" => 0
   },
   "TEST_REQUIRES" => {
+    "File::Path" => 0,
+    "Flux::File" => 0,
     "Flux::Storage::Memory" => 0,
     "Test::More" => 0,
+    "Test::NoWarnings" => 0,
+    "autodie" => 0,
     "strict" => 0,
+    "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.00",
+  "VERSION" => "1.01",
   "test" => {
     "TESTS" => "t/*.t"
   }

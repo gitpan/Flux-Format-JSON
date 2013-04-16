@@ -3,9 +3,14 @@ abstract: 'JSON format for flux storages'
 author:
   - 'Vyacheslav Matyukhin <me@berekuk.ru>'
 build_requires:
+  File::Path: 0
+  Flux::File: 0
   Flux::Storage::Memory: 0
   Test::More: 0
+  Test::NoWarnings: 0
+  autodie: 0
   strict: 0
+  utf8: 0
   warnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
@@ -23,4 +28,4 @@ requires:
   Moo: 0
 resources:
   repository: git://github.com/berekuk/Flux-Format-JSON.git
-version: 1.00
+version: 1.01

@@ -24,7 +24,7 @@ use Flux::Simple qw(mapper);
 has 'json' => (
     is => 'lazy',
     default => sub {
-        return JSON->new->allow_nonref;
+        return JSON->new->utf8->allow_nonref;
     },
 );
 
